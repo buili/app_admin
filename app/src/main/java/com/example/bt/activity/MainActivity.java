@@ -203,13 +203,17 @@ public class MainActivity extends BottomNavigationActivity {
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                    case 4:
+                        Intent donhang = new Intent(getApplicationContext(), DonHangActivity.class);
+                        startActivity(donhang);
+                        break;
                     case 6:
                         Intent chat = new Intent(getApplicationContext(), UserActivity.class);
                         startActivity(chat);
                         break;
                     case 7:
-                        Intent thonke = new Intent(getApplicationContext(), ThongKeActivity.class);
-                        startActivity(thonke);
+                        Intent thongke = new Intent(getApplicationContext(), ThongKeActivity.class);
+                        startActivity(thongke);
                         break;
                     case 8:
                         Paper.book().delete("user");

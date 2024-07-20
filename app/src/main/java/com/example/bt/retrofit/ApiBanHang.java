@@ -152,4 +152,17 @@ public interface ApiBanHang {
 
     @GET("thongkespban.php")
     Observable<ThongKeModel> getthongkespban();
+
+    @POST("donhang.php")
+    @FormUrlEncoded
+    Observable<DonHangModel> donhang(
+            @Field("iduser") int id
+    );
+
+    @POST("updateorder.php")
+    @FormUrlEncoded
+    Observable<MessageModel> updateorder(
+            @Field("id") int id,
+            @Field("trangthai") int trangthai
+    );
 }

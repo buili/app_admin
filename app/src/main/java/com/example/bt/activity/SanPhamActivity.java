@@ -49,7 +49,7 @@ public class SanPhamActivity extends BottomNavigationActivity {
     CompositeDisposable compositeDisposable = new CompositeDisposable();
     LinearLayoutManager linearLayoutManager;
 
-    StaggeredGridLayoutManager staggeredGridLayoutManager;
+
 
     Handler handler = new Handler();
     boolean isLoading = false;

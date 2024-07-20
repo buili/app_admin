@@ -1,10 +1,21 @@
 package com.example.bt.model;
 
+import java.util.List;
+
 public class DonHang {
     int id;
     String sdt, email, diachi;
     int tongtien, trangthai;
 
+    List<Item> item;
+
+    public List<Item> getItem() {
+        return item;
+    }
+
+    public void setItem(List<Item> item) {
+        this.item = item;
+    }
 
     public int getId() {
         return id;
